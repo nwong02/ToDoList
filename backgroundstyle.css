@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body
 {
-    font-family: 'Barlow', sans-serif;
     background-image: linear-gradient(to right, #00ccff, #00cc00);
     color: white;
+    font-family: 'Barlow', sans-serif;
 }
 
 .container
 {
     border: 1px solid grey;
-    width: 90%;
     margin: auto;
+    width: 90%;
 }
 
 .nav
 {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-between;
     margin: 20px 0;
+    width: 100%;
 }
 
 .nav h2
@@ -37,42 +37,42 @@ body
 .user-input
 {
     border: 2px solid lightskyblue;
-    width: 350px;
     text-align: center;
+    width: 350px;
 }
 
 .user-input input
 {
-    width: 85%;
-    outline: none;
-    padding: 10px;
-    border: 2px solid lightgray;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 2px solid lightgray;
+    outline: none;
+    padding: 10px;
     transition: all 0.2s ease-in-out;
+    width: 85%;
 }
 
 .user-input input:focus
 {
-    box-shadow: 0 0 10px red;
     border: 2px solid red;
+    box-shadow: 0 0 10px red;
 }
 
 .user-input button
 {
-    cursor: pointer;
-    padding: 8px;
-    width: fit-content;
-    transition: 1s;
-    outline: none;
     background-color: lightgray;
-    border: 1px solid lightgray;
-    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    transition: 1s;
+    width: fit-content;
 }
 
 .user-input button:hover
@@ -83,6 +83,61 @@ body
 
 .to-do-items
 {
-    width: 500px;
     margin: auto;
+    width: 500px;
+}
+
+.items 
+{
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    color: blue;
+    display: flex;
+    font-size: 1rem;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 25px red;
+    border: 2px solid red;
+}
+
+.item i
+{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media(max-width: 768px)
+{
+    .nav
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2 
+    {
+        margin: 10px 0;
+    }
+
+    .user-input
+    {
+        width: 100%;
+    }
+
+    .to-do-items
+    {
+        width: 100%;
+    }
 }
