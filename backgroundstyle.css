@@ -15,7 +15,6 @@ body
 
 .container
 {
-    border: 1px solid grey;
     margin: auto;
     width: 90%;
 }
@@ -36,7 +35,6 @@ body
 
 .user-input
 {
-    border: 2px solid lightskyblue;
     text-align: center;
     width: 350px;
 }
@@ -49,7 +47,6 @@ body
     -webkit-transition: all 0.2s ease-in-out;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-    border: 2px solid lightgray;
     outline: none;
     padding: 10px;
     transition: all 0.2s ease-in-out;
@@ -89,6 +86,7 @@ body
 
 .items 
 {
+    background-color: white;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -139,5 +137,21 @@ body
     .to-do-items
     {
         width: 100%;
+    }
+}
+
+@media(max-width: 480px)
+{
+    .user-input input 
+    {
+        width: 74%;
+    }
+}
+
+@media(max-width: 320px)
+{
+    .user-input input
+    {
+        width: 60%;
     }
 }
