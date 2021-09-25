@@ -8,7 +8,7 @@
 
 body
 {
-    background-image: linear-gradient(to right, #00ccff, #00cc00);
+    background-image: linear-gradient(to right, gray, darkgray);
     color: white;
     font-family: 'Barlow', sans-serif;
 }

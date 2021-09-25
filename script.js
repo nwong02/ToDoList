@@ -39,4 +39,8 @@ function addItem()
     divChild.appendChild(trashIcon);
 
     divParent.appendChild(divChild);
+
+    toDoItems.appendChild(divParent);
+
+    input.value = '';
 }
